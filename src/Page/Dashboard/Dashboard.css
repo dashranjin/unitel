@@ -1,0 +1,12 @@
+.data-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 50px;
+}
+
+.tableHeader {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+}
