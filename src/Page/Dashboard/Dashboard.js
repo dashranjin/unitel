@@ -19,9 +19,16 @@ const columns = [
 ];
 
 const rows = [
-    { id: 1, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - JAPAN : KDDI CORPORATION', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
-    { id: 2, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - JAPAN : KDDI CORPORATION', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
-    { id: 3, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - JAPAN : KDDI CORPORATION', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
+    { id: 3201, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - JAPAN : KDDI CORPORATION', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
+    { id: 3202, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - SOUTH SUDAN (REPUBLIC OF) : SUDANESE MOBILE', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 12, CONNECT - 0', createdDate: '2023-01-15 21:00:05', task: 'ТГ - ҮСАХ' },
+    { id: 3203, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'OD - RUSSIAN FEDERATION : PJSC MOBILE TELESYSTEMS', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 15, CONNECT - 0', createdDate: '2023-01-15 21:00:06', task: 'ТГ - ҮСАХ' },
+    { id: 3204, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'OD - INDIA : INDIA', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
+    { id: 3205, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - PHILIPPINES : PHILIPPINES', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 12, CONNECT - 0', createdDate: '2023-01-15 21:00:05', task: 'ТГ - ҮСАХ' },
+    { id: 3206, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - CHINA : CHINA MOBILE LIMITED', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 15, CONNECT - 0', createdDate: '2023-01-15 21:00:06', task: 'ТГ - ҮСАХ' },
+    { id: 3207, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - KOREA REPUBLIC OF : KOREA REPUBLIC OF', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 35, CONNECT - 3', createdDate: '2023-01-15 21:00:04', task: 'ТГ - ҮСАХ' },
+    { id: 3208, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - TURKEY : TT MOBIL ILETISM HIZMETLERAI A.S', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 12, CONNECT - 0', createdDate: '2023-01-15 21:00:05', task: 'ТГ - ҮСАХ' },
+    { id: 3209, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'IDD - EGYPT : EGYPT', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 15, CONNECT - 0', createdDate: '2023-01-15 21:00:06', task: 'ТГ - ҮСАХ' },
+    { id: 3210, status: 'ШИНЭ ХҮСЭЛТ', microservice: 'INTL. VOICE MONITOR', subject: 'ASR', name: 'OD - RUSSIAN FEDERATION : LLC T2 MOBILE', step: '1/3', priority: 'CRITICAL', detail: 'DAILY, TOTAL - 15, CONNECT - 0', createdDate: '2023-01-15 21:00:06', task: 'ТГ - ҮСАХ' },
 ];
 
 const Dashboard = () => {
@@ -64,7 +71,6 @@ const Dashboard = () => {
                     onClick={handleMenu}
                     endIcon={<img src={dropdown} alt={'menu'} style={{ width: '15px' }} />}
                     style={{ textTransform: 'none' }}
-
                 >
                     Шинэ хүсэлт
                 </Button>
@@ -72,8 +78,8 @@ const Dashboard = () => {
             <DataGrid
                 rows={rows}
                 columns={columns}
-                pageSize={5}
-                rowsPerPageOptions={[5]}
+            // pageSize={5}
+            // rowsPerPageOptions={[5]}
             />
             {renderMenu}
         </div>
